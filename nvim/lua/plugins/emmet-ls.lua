@@ -9,6 +9,7 @@ return {
           filetypes = {
             "html",
             "php",
+            "blade.php",
             "typescriptreact",
             "javascriptreact",
             "css",
