@@ -104,13 +104,23 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# aliases
 alias godev="cd ~/Documents/Dev/"
 alias dotfiles="cd ~/Documents/Dev/dotfiles/"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias gomysql='mysql -u root -p'
 alias pest="ddev php artisan test"
+alias pint="./vendor/bin/pint"
 alias vim="nvim"
+alias dp="ddev php"
+alias da="ddev php artisan"
+alias dc="ddev composer"
+
+# pest test
+alias pest="ddev php artisan test"
+alias pestc="ddev php artisan test --compact"
+
+alias gc="git add . && git commit -m"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -138,6 +148,9 @@ export PATH="/Users/braedenfoster/Documents/Dev/tooling/Odin:$PATH"
 export PNPM_HOME="/Users/braedenfoster/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# Roc
+export PATH="/Users/braedenfoster/Documents/Dev/tooling/roc_nightly-macos_apple_silicon:$PATH"
+
 [ -f "/Users/braedenfoster/.ghcup/env" ] && source "/Users/braedenfoster/.ghcup/env" # ghcup-env
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -152,6 +165,8 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# OCaml
+eval $(opam env)
 
 # Herd injected PHP binary.
 export PATH="/Users/braedenfoster/Library/Application Support/Herd/bin/":$PATH
