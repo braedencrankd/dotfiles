@@ -145,6 +145,9 @@ export PATH="/opt/homebrew/opt/llvm@14/bin:$PATH"
 # ODIN
 export PATH="/Users/braedenfoster/Documents/Dev/tooling/Odin:$PATH"
 
+# Pocketbase
+export PATH="/Users/braedenfoster/Documents/Dev/tooling/pocketbase_0.21.1_darwin_arm64:$PATH"  
+
 export PNPM_HOME="/Users/braedenfoster/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
